@@ -1,7 +1,7 @@
 import xmlrpclib
 proxy = xmlrpclib.ServerProxy("http://localhost:8000/")
 k=input("enter number:")
-if k%2==0:
+if proxy.is_even(k):
 	ans="even"
 else:
 	ans="odd"
