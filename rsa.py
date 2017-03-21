@@ -1,16 +1,23 @@
-p=input()
-q=input()
-e=input()
+from fractions import gcd
+p=input("enter first prime number")
+q=input("enter second prime number")
 d=1
 s=0
 n=p*q
 phi=(p-1)*(q-1)
+while true:
+	e=input("enter e":)
+	if e<phi and gcd(e,phi)==1:
+		break;
+	else:
+		print("Enter e again")
+
 while(s!=1):
 	s=(d*e)%phi
 	d+=1
 d-=1
 print d
-data=raw_input()
+data=raw_input("enter data")
 print "encrypt"
 enc=[]
 for k in data:
